@@ -19,6 +19,7 @@ const authFormSchema = (type: FormType) => {
       name: type === "sign-up" ? z.string().min(3): z.string().optional(),
       email: z.string().min(3),
       password: z.string().min(5),
+
   })
 }
 
@@ -80,6 +81,7 @@ const AuthForm = ({ type } : { type: FormType}) => {
                     label="Email"
                     placeholder="Enter email"
                     type="email"
+                    
                 />
                 <FormField
                     control={form.control}
