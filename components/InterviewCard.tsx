@@ -15,7 +15,7 @@ const InterviewCard = ({ interviewId, userId, role, type, techstack, createdAt} 
 
     return (
         <div className="card-border w-[360px] mx-sm:w-full max-h-96">
-            <div className="card-interview">
+            <div className="card-interview">    
 <div>
     <div className="absolute top-0 right-0 w-fit px-4 py-2 rounded-bl-lg bg-light-600">
 <p className="badge-text">{normalizedType}</p>
